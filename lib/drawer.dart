@@ -14,9 +14,18 @@ void main() {
 
 class drawer extends StatelessWidget {
   const drawer({Key? key}) : super(key: key);
-
+static const kIcon = <Icon>[
+  Icon(Icons.home),
+  Icon(Icons.add),
+  Icon(Icons.person),
+];
   @override
   Widget build(BuildContext context) {
+//return DefaultTabController(length:kIcons.length,
+
+
+
+
     const drawerHeader = UserAccountsDrawerHeader(
       accountName: Text('Dimas Ramadan'),
       accountEmail: Text('dimasramadanv2@gmail.com'),
@@ -175,24 +184,21 @@ class drawer extends StatelessWidget {
         title: const Text('Rebahan Academy'),
       ),
       body: const Center(
-        child: Text('Sedang Dalam Perbaikan'),
-        
+        child:
+        Text('Sedang Dalam Perbaikan'),
       ),
       drawer: Drawer(
         child: drawerItems,
       ),
       bottomNavigationBar: CurvedNavigationBar(
-        backgroundColor: Color.fromARGB(255, 251, 252, 253),
-       
-        color: Color.fromARGB(255, 9, 132, 214),
-        items: [
-      Icon(Icons.home,
-        color: Colors.white),
-         Icon(Icons.add,
-         color: Colors.white),
-          Icon(Icons.settings,
-          color: Colors.white,),
-      ]),
+          backgroundColor: Color.fromARGB(255, 251, 252, 253),
+          color: Color.fromARGB(255, 9, 132, 214),
+          items: [
+            Icon(Icons.home, color: Colors.white),
+            Icon(Icons.add, color: Colors.white),
+            Icon(Icons.person,color: Colors.white,
+            ),
+          ]),
     );
   }
 }

@@ -1,6 +1,8 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:first_app/answer.dart';
 import 'package:first_app/question.dart';
+import 'package:first_app/quiz.dart';
+import 'package:first_app/result.dart';
 import 'package:flutter/material.dart';
 
 
@@ -43,17 +45,24 @@ class _dashState extends State<dash> {
           title: Center (child: Text('My First App'),
         ),
         ),
-        body: Column(
-          children: [
-            Question(
-              questions[_questionIndex]['questionText'] as String,
-            ),
-            ...(questions[_questionIndex]['answers'] as List<String>)
-                .map((answer) {
-              return Answer(_answerQuestion, answer);
-            }).toList()
-          ],
-        ),
+         body: _questionIndex < questions.length
+         ?Quiz(
+          answerQuestion:_answerQuestion, 
+          questionIndex: _questionIndex, 
+          questions: questions,
+          )
+          :Result(),
+        //  Column(
+        //   children: [
+        //     Question(
+        //       questions[_questionIndex]['questionText'] as String,
+        //     ),
+        //     ...(questions[_questionIndex]['answers'] as List<String>)
+        //         .map((answer) {
+        //       return Answer(_answerQuestion, answer);
+        //     }).toList()
+        //   ],
+        // ),
          bottomNavigationBar: CurvedNavigationBar(
         backgroundColor: Color.fromARGB(255, 251, 252, 253),
         color: Color.fromARGB(255, 9, 132, 214),
@@ -62,7 +71,7 @@ class _dashState extends State<dash> {
         color: Colors.white),
          Icon(Icons.add,
          color: Colors.white),
-          Icon(Icons.settings,
+          Icon(Icons.person,
           color: Colors.white,),
       ]),
     );
