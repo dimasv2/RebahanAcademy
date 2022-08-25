@@ -1,12 +1,7 @@
-import 'package:first_app/answer.dart';
-import 'package:first_app/login.dart';
-import 'package:first_app/question.dart';
 import 'package:first_app/splash_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:first_app/answer.dart';
 import 'package:provider/provider.dart';
 import 'package:first_app/controllers/book.controller.dart';
-import 'package:provider/provider.dart';
 import './splash_screen.dart';
 
 void main() {

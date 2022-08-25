@@ -1,14 +1,11 @@
-import 'package:first_app/drawer.dart';
-import 'package:first_app/main.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:first_app/dashboard.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   runApp(MaterialApp(
     theme: ThemeData(primaryColor: Colors.purple),
     debugShowCheckedModeBanner: false,
-    home: drawer(),
+    home: const drawer(),
   ));
 }
 
