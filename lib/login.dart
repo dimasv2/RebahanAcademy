@@ -1,11 +1,13 @@
+import 'package:first_app/dash_board.dart';
 import 'package:first_app/dashboard.dart';
+import 'package:first_app/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
     theme: ThemeData(primaryColor: Colors.purple),
     debugShowCheckedModeBanner: false,
-    home: const drawer(),
+    home: drawer(),
   ));
 }
 
@@ -52,7 +54,7 @@ class LoginPage extends StatelessWidget {
         child: Container(
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
               gradient: LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
@@ -64,21 +66,21 @@ class LoginPage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Image.asset('assets/awan.png', height: 200, fit: BoxFit.fill),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
-              Text(
+              const Text(
                 'REBAHAN ACADEMY',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 20,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               Container(
@@ -90,21 +92,21 @@ class LoginPage extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
-                    Text(
+                    const Text(
                       'Login To Your Account',
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      style: const TextStyle(
+                          fontSize: 20, fontWeight: FontWeight.bold),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     Container(
                       width: 250,
-                      child: TextField(
-                        decoration: InputDecoration(
+                      child: const TextField(
+                        decoration: const InputDecoration(
                           labelText: 'Email Address',
                           //suffixIcon: Icon(FontAwesomeIcons.envelope,
                           // size: 17,),
@@ -113,9 +115,9 @@ class LoginPage extends StatelessWidget {
                     ),
                     Container(
                       width: 250,
-                      child: TextField(
+                      child: const TextField(
                         obscureText: true,
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           labelText: 'Password',
                           //suffixIcon: Icon(FontAwesomeIcons.eyeSlash,
                           //size: 17,),
@@ -123,19 +125,19 @@ class LoginPage extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.fromLTRB(20, 20, 40, 20),
+                      padding: const EdgeInsets.fromLTRB(20, 20, 40, 20),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
-                          Text(
+                          const Text(
                             'Forget Password',
-                            style: TextStyle(
+                            style: const TextStyle(
                                 color: Color.fromARGB(255, 9, 61, 231)),
                           )
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     GestureDetector(
@@ -143,7 +145,7 @@ class LoginPage extends StatelessWidget {
                         Navigator.of(context).push(
                           MaterialPageRoute(
                             builder: ((context) {
-                              return drawer();
+                              return const dashboards();
                             }),
                           ),
                         );
@@ -153,15 +155,15 @@ class LoginPage extends StatelessWidget {
                         width: 250,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(50),
-                            gradient: LinearGradient(
+                            gradient: const LinearGradient(
                                 begin: Alignment.centerLeft,
                                 end: Alignment.centerRight,
                                 colors: [
-                                  Color.fromARGB(255, 110, 192, 224),
+                                  const Color.fromARGB(255, 110, 192, 224),
                                   Color.fromARGB(255, 9, 98, 231),
                                   Color.fromARGB(255, 110, 192, 224),
                                 ])),
-                        child: Padding(
+                        child: const Padding(
                           padding: EdgeInsets.all(12.0),
                           child: Text(
                             'Login',
