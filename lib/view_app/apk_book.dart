@@ -30,11 +30,11 @@ class book extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SizedBox(
-                height: 30,
+                height: 3,
               ),
               Container(
-                height: 300,
-                width: 200,
+                height: 200,
+                width: 150,
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(10)),
@@ -44,21 +44,21 @@ class book extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 15,
+                height: 1,
               ),
               Text(
                 'REBAHAN ACADEMY',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
-                  fontSize: 30,
+                  fontSize: 20,
                 ),
               ),
               SizedBox(
-                height: 17,
+                height: 3,
               ),
               Container(
-                height: 390,
+                height: 400,
                 width: 400,
                 decoration: BoxDecoration(
                     color: Colors.white,
@@ -67,17 +67,17 @@ class book extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     const SizedBox(
-                      height: 30,
+                      height: 2,
                     ),
                     const Text(
                       'Aplikasi Buku',
                       style: TextStyle(
-                          fontSize: 30,
+                          fontSize: 25,
                           fontWeight: FontWeight.bold,
                           color: Color.fromARGB(255, 34, 119, 188)),
                     ),
                     const SizedBox(
-                      height: 20,
+                      height: 4,
                     ),
                     const Text(
                       'Deskripsi Aplikasi:                                      ',

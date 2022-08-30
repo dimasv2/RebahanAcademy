@@ -30,36 +30,36 @@ class uang extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SizedBox(
-                height: 30,
+                height: 3,
               ),
               Container(
-                height: 300,
+                height: 200,
                 width: 150,
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(10)),
                 child: Image.asset(
                   'assets/details/uang.png',
-                  height: 330,
-                  width: 330,
+                  height: 100,
+                  width: 100,
                 ),
               ),
               SizedBox(
-                height: 15,
+                height: 1,
               ),
               Text(
                 'REBAHAN ACADEMY',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
-                  fontSize: 30,
+                  fontSize: 20,
                 ),
               ),
               SizedBox(
-                height: 17,
+                height: 3,
               ),
               Container(
-                height: 390,
+                height: 400,
                 width: 400,
                 decoration: BoxDecoration(
                     color: Colors.white,
@@ -68,17 +68,17 @@ class uang extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     const SizedBox(
-                      height: 30,
+                      height: 2,
                     ),
                     const Text(
                       'Aplikasi Pengeluaran Pribadi',
                       style: TextStyle(
-                          fontSize: 28,
+                          fontSize: 25,
                           fontWeight: FontWeight.bold,
                           color: Color.fromARGB(255, 34, 119, 188)),
                     ),
                     const SizedBox(
-                      height: 20,
+                      height: 4,
                     ),
                     const Text(
                       'Deskripsi Aplikasi:                                      ',

@@ -1,50 +1,57 @@
-import 'package:first_app/quiz/main.dart';
-import 'package:first_app/views/book_list_page.dart';
+// ignore_for_file: prefer_const_constructors
+
+import 'package:first_app/view_app/apk_meals.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class cbook extends StatefulWidget {
-  const cbook({Key? key}) : super(key: key);
+class cmeals extends StatefulWidget {
+  const cmeals({Key? key}) : super(key: key);
 
   @override
-  State<cbook> createState() => _cbookState();
+  State<cmeals> createState() => _cmealsState();
 }
 
-class _cbookState extends State<cbook> {
+class _cmealsState extends State<cmeals> {
   _launchurl() async {
-    const url = "https://github.com/dimasv2/book_app.git";
+    const url = "https://github.com/dimasv2/bmi_pretest.git";
     if (await canLaunch(url)) {
       await launch(url);
     } else {
       throw "Could not launch the Url";
     }
   }
+  //@override
+//   Widget build(BuildContext context) {
+//     return Scaffold();
+//   }
+// }
+
+// class cbmi extends StatelessWidget {
+//   const cbmi({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Source Code Aplikasi Buku'),
+        title: const Text('Source Code Aplikasi Makanan'),
       ),
       body: SingleChildScrollView(
         child: Container(
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
               gradient: LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                   colors: [
-                Color.fromARGB(255, 6, 103, 136),
-                Color.fromARGB(255, 83, 98, 146),
+                const Color.fromARGB(255, 6, 103, 136),
+                const Color.fromARGB(255, 83, 98, 146),
                 Color.fromARGB(255, 6, 103, 136),
               ])),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               Container(
@@ -54,22 +61,22 @@ class _cbookState extends State<cbook> {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(10)),
                 child: Image.asset(
-                  'assets/details/book.png',
+                  'assets/details/meals.png',
                   height: 100,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 1,
               ),
-              Text(
+              const Text(
                 'REBAHAN ACADEMY',
-                style: TextStyle(
+                style: const TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                   fontSize: 20,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 3,
               ),
               Container(
@@ -147,9 +154,9 @@ class _cbookState extends State<cbook> {
                     //     ],
                     //   ),
                     // ),
-                    const SizedBox(
-                      height: 10,
-                    ),
+                    // const SizedBox(
+                    //   height: 1,
+                    // ),
 
                     IconButton(
                       icon: const Icon(
@@ -163,6 +170,60 @@ class _cbookState extends State<cbook> {
                       width: 2,
                     ),
                     Text('  Link Download')
+                    // RichText(
+                    //   text: TextSpan(
+                    //     text: 'non',
+                    //     children: [
+                    //       const TextSpan(),
+                    //       TextSpan(
+                    //         text: 'text.',
+                    //         recognizer: TapGestureRecognizer()
+                    //           ..onTap = () async {
+                    //             // ignore: prefer_const_declarations
+                    //             final url =
+                    //                 'https://github.com/flutter/gallery/';
+                    //             if (await canLaunch(url)) {
+                    //               await launch(
+                    //                 url,
+                    //                 forceSafariVC: false,
+                    //               );
+                    //             }
+                    //           },
+                    //       ),
+                    //       const TextSpan(),
+                    //     ],
+                    //   ),
+                    // )
+                    // GestureDetector(
+                    //   onTap: () {
+                    //     launch('https://docs.flutter.io/flutter/services/UrlLauncher-class.html');
+
+                    //   },
+                    //   child: Container(
+                    //     alignment: Alignment.center,
+                    //     width: 250,
+                    //     decoration: BoxDecoration(
+                    //         borderRadius: BorderRadius.circular(50),
+                    //         gradient: LinearGradient(
+                    //             begin: Alignment.centerLeft,
+                    //             end: Alignment.centerRight,
+                    //             colors: [
+                    //               Color.fromARGB(255, 110, 192, 224),
+                    //               Color.fromARGB(255, 9, 98, 231),
+                    //               Color.fromARGB(255, 110, 192, 224),
+                    //             ])),
+                    //     child: Padding(
+                    //       padding: EdgeInsets.all(12.0),
+                    //       child: Text(
+                    //         'Download Kode Aplikasi',
+                    //         style: TextStyle(
+                    //             color: Colors.white,
+                    //             fontSize: 20,
+                    //             fontWeight: FontWeight.bold),
+                    //       ),
+                    //     ),
+                    //   ),
+                    // )
                   ],
                 ),
               )

@@ -1,16 +1,18 @@
+import 'package:first_app/meal_app/main.dart';
 import 'package:first_app/quiz/main.dart';
+import 'package:first_app/view/bmi_data_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-class apkkuis extends StatelessWidget {
-  const apkkuis({Key? key}) : super(key: key);
+class meals extends StatelessWidget {
+  const meals({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Detail Aplikasi Quesioner'),
+        title: Text('Detail Aplikasi Makanan'),
       ),
       body: SingleChildScrollView(
         child: Container(
@@ -38,7 +40,7 @@ class apkkuis extends StatelessWidget {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(10)),
                 child: Image.asset(
-                  'assets/details/quiz.png',
+                  'assets/details/bmi.png',
                   height: 100,
                 ),
               ),
@@ -69,7 +71,7 @@ class apkkuis extends StatelessWidget {
                       height: 2,
                     ),
                     const Text(
-                      'Aplikasi Quesioner',
+                      'Aplikasi Makanan',
                       style: TextStyle(
                           fontSize: 25,
                           fontWeight: FontWeight.bold,
@@ -139,7 +141,7 @@ class apkkuis extends StatelessWidget {
                         Navigator.of(context).push(
                           MaterialPageRoute(
                             builder: ((context) {
-                              return MyApps();
+                              return apkku();
                             }),
                           ),
                         );

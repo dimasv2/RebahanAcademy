@@ -69,9 +69,18 @@ class dashboards extends StatefulWidget {
 
 class _dashboardsState extends State<dashboards> {
   final items = const [
-    Icon(Icons.app_shortcut_outlined),
-    Icon(Icons.home),
-    Icon(Icons.code),
+    Icon(
+      Icons.app_shortcut_outlined,
+      color: Colors.white,
+    ),
+    Icon(
+      Icons.home,
+      color: Colors.white,
+    ),
+    Icon(
+      Icons.code,
+      color: Colors.white,
+    ),
   ];
 
   int index = 1;
@@ -82,9 +91,9 @@ class _dashboardsState extends State<dashboards> {
       //   title: Text('rebahans'),
       // ),
       bottomNavigationBar: CurvedNavigationBar(
-        buttonBackgroundColor: Color.fromARGB(255, 203, 222, 238),
+        buttonBackgroundColor: Color.fromARGB(255, 23, 97, 171),
         backgroundColor: Colors.white,
-        color: Colors.blue,
+        color: Color.fromARGB(255, 23, 97, 171),
         items: items,
         index: index,
         onTap: (selectedIndex) {

@@ -1,6 +1,8 @@
 import 'package:first_app/code/code_bmi.dart';
 import 'package:first_app/code/code_book.dart';
 import 'package:first_app/code/code_kuis.dart';
+import 'package:first_app/code/code_meals.dart';
+import 'package:first_app/code/code_shop.dart';
 import 'package:first_app/code/code_uang.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
@@ -30,7 +32,7 @@ class _apk_codeState extends State<apk_code> {
           crossAxisCount: 3,
           children: <Widget>[
             Card(
-              color: Color.fromARGB(255, 187, 209, 229),
+              color: Colors.white,
               elevation: 15,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30)),
@@ -67,7 +69,7 @@ class _apk_codeState extends State<apk_code> {
               ),
             ),
             Card(
-              color: Color.fromARGB(255, 187, 209, 229),
+              color: Colors.white,
               elevation: 15,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30)),
@@ -104,7 +106,7 @@ class _apk_codeState extends State<apk_code> {
               ),
             ),
             Card(
-              color: Color.fromARGB(255, 187, 209, 229),
+              color: Colors.white,
               elevation: 15,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30)),
@@ -141,7 +143,7 @@ class _apk_codeState extends State<apk_code> {
               ),
             ),
             Card(
-              color: Color.fromARGB(255, 187, 209, 229),
+              color: Colors.white,
               elevation: 15,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30)),
@@ -172,6 +174,80 @@ class _apk_codeState extends State<apk_code> {
                     const Text(
                       'Apk Quiz',
                       style: TextStyle(fontSize: 15.0),
+                    )
+                  ],
+                )),
+              ),
+            ),
+            Card(
+              color: Colors.white,
+              elevation: 15,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30)),
+              margin: const EdgeInsets.only(left: 20.0, right: 20.0, top: 10.0),
+              child: InkWell(
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: ((context) {
+                        return const cmeals();
+                      }),
+                    ),
+                  );
+                },
+                splashColor: Colors.blue,
+                child: Center(
+                    child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(50.0),
+                      child: Image.asset(
+                        'assets/images/meals.png',
+                        height: 60,
+                        width: 60,
+                      ),
+                    ),
+                    const Text(
+                      'Apk Makanan',
+                      style: TextStyle(fontSize: 14.0),
+                    )
+                  ],
+                )),
+              ),
+            ),
+            Card(
+              color: Colors.white,
+              elevation: 15,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30)),
+              margin: const EdgeInsets.only(left: 20.0, right: 20.0, top: 10.0),
+              child: InkWell(
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: ((context) {
+                        return const cshop();
+                      }),
+                    ),
+                  );
+                },
+                splashColor: Colors.blue,
+                child: Center(
+                    child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(50.0),
+                      child: Image.asset(
+                        'assets/images/shop.png',
+                        height: 60,
+                        width: 60,
+                      ),
+                    ),
+                    const Text(
+                      'Apk Belanja',
+                      style: TextStyle(fontSize: 14.0),
                     )
                   ],
                 )),
