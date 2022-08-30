@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import
+
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:first_app/code/home_code.dart';
 import 'package:first_app/dashboard.dart';

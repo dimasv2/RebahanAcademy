@@ -43,8 +43,8 @@ class _cshopState extends State<cshop> {
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                   colors: [
-                const Color.fromARGB(255, 6, 103, 136),
-                const Color.fromARGB(255, 83, 98, 146),
+                Color.fromARGB(255, 6, 103, 136),
+                Color.fromARGB(255, 83, 98, 146),
                 Color.fromARGB(255, 6, 103, 136),
               ])),
           child: Column(
@@ -69,7 +69,7 @@ class _cshopState extends State<cshop> {
               ),
               const Text(
                 'REBAHAN ACADEMY',
-                style: const TextStyle(
+                style: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                   fontSize: 20,

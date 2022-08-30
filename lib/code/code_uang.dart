@@ -1,8 +1,5 @@
-import 'package:first_app/expensive/main.dart';
-import 'package:first_app/quiz/main.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
 import 'package:url_launcher/url_launcher.dart';
 
 class cuang extends StatefulWidget {
@@ -26,25 +23,25 @@ class _cuangState extends State<cuang> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Source Code Aplikasi Pengeluaran'),
+        title: const Text('Source Code Aplikasi Pengeluaran'),
       ),
       body: SingleChildScrollView(
         child: Container(
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
-          decoration: BoxDecoration(
-              gradient: LinearGradient(
+          decoration: const BoxDecoration(
+              gradient: const LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                   colors: [
-                Color.fromARGB(255, 6, 103, 136),
+                const Color.fromARGB(255, 6, 103, 136),
                 Color.fromARGB(255, 83, 98, 146),
                 Color.fromARGB(255, 6, 103, 136),
               ])),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               Container(
@@ -59,18 +56,18 @@ class _cuangState extends State<cuang> {
                   width: 330,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 1,
               ),
-              Text(
+              const Text(
                 'REBAHAN ACADEMY',
-                style: TextStyle(
+                style: const TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                   fontSize: 20,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 3,
               ),
               Container(
@@ -161,10 +158,10 @@ class _cuangState extends State<cuang> {
                       ),
                       onPressed: _launchurl,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 2,
                     ),
-                    Text('  Link Download')
+                    const Text('  Link Download')
                   ],
                 ),
               )

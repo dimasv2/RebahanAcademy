@@ -217,7 +217,7 @@ final List<String> listImages = [
 
 final List<Widget> imageSlider = listImages
     .map((item) => Container(
-        color: Color.fromARGB(255, 248, 250, 250),
+        color: Color.fromARGB(255, 247, 248, 248),
         margin: const EdgeInsets.all(5.0),
         child: ClipRRect(
           borderRadius: const BorderRadius.all(Radius.circular(8.0)),
@@ -253,7 +253,7 @@ final List<Widget> imageSlider = listImages
 ImageCarousel(BuildContext context) {
   return Container(
     padding: const EdgeInsets.all(5),
-    color: Color.fromARGB(255, 248, 248, 248),
+    color: Color.fromARGB(255, 243, 244, 245),
     height: 180,
     width: MediaQuery.of(context).size.width,
     child: CarouselSlider(

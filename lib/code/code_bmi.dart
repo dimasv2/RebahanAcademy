@@ -43,8 +43,8 @@ class _cbmiState extends State<cbmi> {
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                   colors: [
-                const Color.fromARGB(255, 6, 103, 136),
-                const Color.fromARGB(255, 83, 98, 146),
+                Color.fromARGB(255, 6, 103, 136),
+                Color.fromARGB(255, 83, 98, 146),
                 Color.fromARGB(255, 6, 103, 136),
               ])),
           child: Column(
@@ -69,7 +69,7 @@ class _cbmiState extends State<cbmi> {
               ),
               const Text(
                 'REBAHAN ACADEMY',
-                style: const TextStyle(
+                style: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                   fontSize: 20,
@@ -156,7 +156,7 @@ class _cbmiState extends State<cbmi> {
                     // const SizedBox(
                     //   height: 1,
                     // ),
-                 
+
                     IconButton(
                       icon: const Icon(
                         Icons.link_outlined,

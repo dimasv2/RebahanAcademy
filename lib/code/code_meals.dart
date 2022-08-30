@@ -1,6 +1,3 @@
-// ignore_for_file: prefer_const_constructors
-
-import 'package:first_app/view_app/apk_meals.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -44,8 +41,8 @@ class _cmealsState extends State<cmeals> {
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                   colors: [
-                const Color.fromARGB(255, 6, 103, 136),
-                const Color.fromARGB(255, 83, 98, 146),
+                Color.fromARGB(255, 6, 103, 136),
+                Color.fromARGB(255, 83, 98, 146),
                 Color.fromARGB(255, 6, 103, 136),
               ])),
           child: Column(
@@ -70,7 +67,7 @@ class _cmealsState extends State<cmeals> {
               ),
               const Text(
                 'REBAHAN ACADEMY',
-                style: const TextStyle(
+                style: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                   fontSize: 20,
@@ -166,10 +163,10 @@ class _cmealsState extends State<cmeals> {
                       ),
                       onPressed: _launchurl,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 2,
                     ),
-                    Text('  Link Download')
+                    const Text('  Link Download')
                     // RichText(
                     //   text: TextSpan(
                     //     text: 'non',

@@ -1,7 +1,5 @@
-import 'package:first_app/quiz/main.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
 import 'package:url_launcher/url_launcher.dart';
 
 class capkkuis extends StatefulWidget {
@@ -25,13 +23,13 @@ class _capkkuisState extends State<capkkuis> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Source Code Aplikasi Quesioner'),
+        title: const Text('Source Code Aplikasi Quesioner'),
       ),
       body: SingleChildScrollView(
         child: Container(
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
               gradient: LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
@@ -43,7 +41,7 @@ class _capkkuisState extends State<capkkuis> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               Container(
@@ -57,10 +55,10 @@ class _capkkuisState extends State<capkkuis> {
                   height: 100,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 1,
               ),
-              Text(
+              const Text(
                 'REBAHAN ACADEMY',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
@@ -68,7 +66,7 @@ class _capkkuisState extends State<capkkuis> {
                   fontSize: 20,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 3,
               ),
               Container(
@@ -158,10 +156,10 @@ class _capkkuisState extends State<capkkuis> {
                       ),
                       onPressed: _launchurl,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 2,
                     ),
-                    Text('  Link Download')
+                    const Text('  Link Download')
                   ],
                 ),
               )
