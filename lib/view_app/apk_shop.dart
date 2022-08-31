@@ -1,4 +1,5 @@
 import 'package:first_app/quiz/main.dart';
+import 'package:first_app/shop_app/main.dart';
 import 'package:first_app/view/bmi_data_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
@@ -140,7 +141,7 @@ class shop extends StatelessWidget {
                         Navigator.of(context).push(
                           MaterialPageRoute(
                             builder: ((context) {
-                              return BmiDataScreen();
+                              return apkshop();
                             }),
                           ),
                         );

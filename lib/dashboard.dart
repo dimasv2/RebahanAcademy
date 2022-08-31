@@ -14,13 +14,19 @@ void main() {
 
 class drawer extends StatelessWidget {
   const drawer({Key? key}) : super(key: key);
+//  int _currentSelection = 1;
 
+//   _selectedItem(int id) {
+//     _currentSelection = id;
+//     setState(() {});
+//   }
   // static const kIcon = <Icon>[
   //   Icon(Icons.home),
   //   Icon(Icons.add),
   //   Icon(Icons.person),
   // ];
 //int index = 2;
+
   @override
   Widget build(BuildContext context) {
     // final items = <Widget>[
@@ -164,10 +170,49 @@ class drawer extends StatelessWidget {
             //     )
             //   ],
             // ),
-            Container(
-              height: 100,
-              width: 100,
-              color: Colors.white,
+
+            Stack(
+              children: [
+                Container(
+                  margin: EdgeInsets.only(left: 16.0, bottom: 12.0),
+                  child: Row(
+                    children: [
+                      InkWell(
+                        onTap: () {},
+                        child: const Text('Tahap 1'),
+                      ),
+                      const SizedBox(
+                        width: 12.0,
+                      ),
+                      InkWell(
+                        onTap: () {},
+                        child: const Text('Tahap 2'),
+                      ),
+                      const SizedBox(
+                        width: 12.0,
+                      ),
+                      InkWell(
+                        onTap: () {},
+                        child: const Text('Tahap 3'),
+                      ),
+                    ],
+                  ),
+                ),
+                AnimatedPositioned(
+                  duration: const Duration(milliseconds: 400),
+                  curve: Curves.fastOutSlowIn,
+                  left: 16.0,
+                  bottom: 4.0,
+                  child: Container(
+                    width: 30.0,
+                    height: 4.0,
+                    decoration: ShapeDecoration(
+                      shape: const StadiumBorder(),
+                      color: Colors.orange[200],
+                    ),
+                  ),
+                ),
+              ],
             ),
             const SizedBox(
               height: 100,
